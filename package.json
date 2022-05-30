@@ -1,17 +1,12 @@
 {
-	"name": "convert-hrtime",
+	"name": "convert-hrtime-cjs",
 	"version": "5.0.0",
-	"description": "Convert the result of `process.hrtime.bigint()` to seconds, milliseconds, nanoseconds",
+	"description": "Convert the result of `process.hrtime.bigint()` to seconds, milliseconds, nanoseconds (commonjs)",
 	"license": "MIT",
-	"repository": "sindresorhus/convert-hrtime",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
-	"type": "module",
-	"exports": "./index.js",
+	"repository": "loupi/convert-hrtime",
+	"author": "Louis-Pierre Beaumont",
+	"main": "./index.js",
+	"typers": "./index.d.ts",
 	"engines": {
 		"node": ">=12"
 	},
@@ -40,5 +35,10 @@
 		"ava": "^3.15.0",
 		"tsd": "^0.14.0",
 		"xo": "^0.38.2"
-	}
+	},
+	"xo": {
+    "rules": {
+      "unicorn/prefer-module": 0
+    }
+  }
 }

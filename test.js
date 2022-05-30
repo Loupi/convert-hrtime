@@ -1,5 +1,5 @@
-import test from 'ava';
-import convertHrtime from './index.js';
+const test = require('ava');
+const convertHrtime = require('./index.js');
 
 test('main', t => {
 	const start = process.hrtime.bigint();
